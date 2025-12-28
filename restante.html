@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal 2025</h1>
+    </header>
+
+    <main class="container">
+        <!-- Formulário para publicar -->
+        <section class="publish-area">
+            <h2>Criar Nova Publicação</h2>
+            <input type="text" id="titleInput" placeholder="Título da matéria">
+            <textarea id="contentInput" placeholder="O que você quer publicar?"></textarea>
+            <button onclick="publishPost()">Publicar Agora</button>
+        </section>
+
+        <!-- Feed de Notícias -->
+        <section id="feed">
+            <h2>Últimas Publicações</h2>
+            <div id="postsList">
+                <!-- Os posts aparecerão aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
